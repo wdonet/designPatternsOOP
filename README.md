@@ -17,4 +17,4 @@ Structural
 - Adapter
 
 Behavioral
-- [Mediator](https://github.com/wdonet/designPatternsOOP/tree/master/Mediator)
+- [Mediator](Mediator)
