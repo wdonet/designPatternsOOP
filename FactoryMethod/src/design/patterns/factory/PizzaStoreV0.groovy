@@ -11,13 +11,11 @@ import design.patterns.factory.product.concrete.style.ny.NYStyleCheesePizza
 import design.patterns.factory.product.concrete.style.ny.NYStylePepperoniPizza
 import design.patterns.factory.product.concrete.style.ny.NYStyleVeggiePizza
 
-/**
- * Created by ahernandez on 1/10/17.
- */
 class PizzaStoreV0 {
 
     Pizza orderPizza(String style, String type) {
         Pizza pizza = null;
+
         if(style.equalsIgnoreCase("NY")) {
             if(type.equalsIgnoreCase("cheese")) {
                 pizza = new NYStyleCheesePizza()

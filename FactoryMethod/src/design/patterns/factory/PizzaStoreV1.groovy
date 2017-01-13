@@ -5,9 +5,6 @@ import design.patterns.factory.product.concrete.CheesePizza
 import design.patterns.factory.product.concrete.PepperoniPizza
 import design.patterns.factory.product.concrete.VeggiePizza
 
-/**
- * Created by ahernandez on 1/10/17.
- */
 class PizzaStoreV1 {
 
     Pizza orderPizza(String type) {

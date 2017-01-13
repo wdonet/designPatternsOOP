@@ -33,6 +33,30 @@ we need to update every where this is present.
 
 We can say this is not closed for modification.
 
+If we need to create different styles we could do something like:
+
+```java
+    Pizza pizza;
+    
+    if(style.equals("NY")) {
+        if(type.equals("cheese")) {
+            pizza = new NYStyleCheesePizza();
+        } else if(type.equals("pepperoni")) {
+            pizza = new NYStylePepperoniPizza();
+        } else if(type.equals("veggie")) {
+            pizza = new NYStyleVeggiePizza();
+        }
+    } else {
+        if(type.equals("cheese")) {
+            pizza = new DefaultStyleCheesePizza();
+        } else if(type.equals("pepperoni")) {
+            pizza = new DefaultStylePepperoniPizza();
+        } else if(type.equals("veggie")) {
+            pizza = new DefaultStyleVeggiePizza();
+        }
+    }
+```
+
 
 ## Applicability
 
