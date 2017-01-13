@@ -55,6 +55,10 @@ Use the Factory Method Pattern when:
 
 
 ## Actors
+
+![Image of Factory Pattern]
+(https://github.com/wdonet/designPatternsOOP/blob/ahernandez/factoryPattern/FactoryMethod/Factory_Method_UML_class_diagram.png)
+
 - **Creator**: Provides a method for creating objects **(Factory Method)** and also all the methods to manipulate products
 - **Concrete Creator**: Implements the **Factory Method** to produce concrete objects
 - **Product**: Interface shared by all the products
