@@ -12,7 +12,7 @@ import design.patterns.factory.product.concrete.style.ny.NYStylePepperoniPizza
 import design.patterns.factory.product.concrete.style.ny.NYStyleVeggiePizza
 
 //Creator
-abstract class PizzaStoreV3 {
+abstract class PizzaStore {
 
     Pizza orderPizza(String type) {
         Pizza pizza
@@ -31,7 +31,7 @@ abstract class PizzaStoreV3 {
 }
 
 //Concrete creator
-class NYPizzaStore extends PizzaStoreV3 {
+class NYPizzaStore extends PizzaStore {
     @Override
     Pizza createPizza(String type) {
         Pizza pizza
@@ -46,7 +46,7 @@ class NYPizzaStore extends PizzaStoreV3 {
     }
 }
 
-class ChicagoPizzaStore extends PizzaStoreV3 {
+class ChicagoPizzaStore extends PizzaStore {
     @Override
     Pizza createPizza(String type) {
         Pizza pizza
@@ -61,7 +61,7 @@ class ChicagoPizzaStore extends PizzaStoreV3 {
     }
 }
 
-class CaliforniaPizzaStore extends PizzaStoreV3 {
+class CaliforniaPizzaStore extends PizzaStore {
     @Override
     Pizza createPizza(String type) {
         Pizza pizza

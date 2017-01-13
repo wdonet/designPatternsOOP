@@ -1,5 +1,9 @@
 package design.patterns.factory.product
 
+/**
+ * Product
+ * Class shared by all the concrete products
+ */
 abstract class Pizza {
     String name
 
