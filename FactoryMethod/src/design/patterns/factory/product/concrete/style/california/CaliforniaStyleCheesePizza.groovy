@@ -1,7 +1,9 @@
-package design.patterns.factory.product.concrete
+package design.patterns.factory.product.concrete.style.california
 
-/**
- * Created by ahernandez on 1/10/17.
- */
-class CaliforniaStyleCheesePizza {
+import design.patterns.factory.product.Pizza
+
+class CaliforniaStyleCheesePizza extends Pizza {
+    CaliforniaStyleCheesePizza() {
+        name = "California Style Cheese Pizza"
+    }
 }

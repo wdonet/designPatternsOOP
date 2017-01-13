@@ -1,7 +1,10 @@
 package design.patterns.factory.product.concrete
 
-/**
- * Created by ahernandez on 1/10/17.
- */
-class CheesePizza {
+import design.patterns.factory.product.Pizza
+
+class CheesePizza extends Pizza {
+
+    CheesePizza() {
+        name = "Cheese Pizza"
+    }
 }

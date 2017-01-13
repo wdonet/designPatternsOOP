@@ -1,28 +1,10 @@
-package design.patterns.factory.product.concrete
+package design.patterns.factory.product.concrete.style.ny
 
 import design.patterns.factory.product.Pizza
 
-/**
- * Created by ahernandez on 1/10/17.
- */
-class NYStyleCheesePizza implements Pizza {
-    @Override
-    void prepare() {
-        println "Preparing "
-    }
+class NYStyleCheesePizza extends Pizza {
 
-    @Override
-    void bake() {
-
-    }
-
-    @Override
-    void cut() {
-
-    }
-
-    @Override
-    void box() {
-
+    NYStyleCheesePizza() {
+        name = "NY Style Cheese Pizza"
     }
 }

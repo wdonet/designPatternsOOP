@@ -1,28 +1,9 @@
-package design.patterns.factory.product.concrete
+package design.patterns.factory.product.concrete.style.chicago
 
 import design.patterns.factory.product.Pizza
 
-/**
- * Created by ahernandez on 1/10/17.
- */
-class ChicagoStyleVeggiePizza implements Pizza {
-    @Override
-    void prepare() {
-
-    }
-
-    @Override
-    void bake() {
-
-    }
-
-    @Override
-    void cut() {
-
-    }
-
-    @Override
-    void box() {
-
+class ChicagoStyleVeggiePizza extends Pizza {
+    ChicagoStyleVeggiePizza() {
+        name = "Chicago Style Veggie Pizza"
     }
 }
