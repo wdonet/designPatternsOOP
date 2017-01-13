@@ -9,7 +9,7 @@ Instantiating concrete classes makes fragile and less flexible code, i.e.
     CheesePizza cheesePizza = new CheesePizza();
 ```
 
-Its better to use an interface, i.e.
+It's better to use an interface, i.e.
 ```java
     Pizza cheesePizza = new CheesePizza();
 ```
@@ -24,7 +24,7 @@ When having a set of concrete classes we often are forced to code:
     } else if(type.equals("pepperoni")) {
         pizza = new PepperoniPizza();
     } else if(type.equals("veggie")) {
-        pizza = new VeggieDog();
+        pizza = new VeggiePizza();
     }
 ```
 
@@ -55,10 +55,10 @@ Use the Factory Method Pattern when:
 
 
 ## Actors
-- Creator: Provides a method for creating objects **(Factory Method)** and also all the methods to manipulate products
-- Concrete Creator: Implements the **Factory Method** to produce concrete objects
-- Product: Interface shared by all the products
-- Concrete Product: Must implement the Product interface
+- **Creator**: Provides a method for creating objects **(Factory Method)** and also all the methods to manipulate products
+- **Concrete Creator**: Implements the **Factory Method** to produce concrete objects
+- **Product**: Interface shared by all the products
+- **Concrete Product**: Must implement the Product interface
 
 ## Benefits
 - All creation code is centralized
