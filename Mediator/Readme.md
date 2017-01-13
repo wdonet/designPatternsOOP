@@ -63,7 +63,10 @@ User <|-left- Room
 @enduml
 ```
 
-Sequence Diagram [1 via](http://i.imgur.com/C8XQoZw.png), [2 vias](http://i.imgur.com/cpYuWv9.png)
+Sequence Diagrams:
+
+![1 via](http://i.imgur.com/C8XQoZw.png)
+![2 vias](http://i.imgur.com/cpYuWv9.png)
 ... or generate it with [plantext](https://www.planttext.com/) :
 ```
 @startuml
