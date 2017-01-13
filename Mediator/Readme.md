@@ -23,7 +23,8 @@ Introduces a middle object between two others or more to decouple communication.
   - _Observer pattern_ works as in Class A registering zero or more observers of type O. When something in A is changed it notifies all of the observers.
 
 ## Classes
-[Classes Diagram](http://i.imgur.com/LO6Ad6a.png) or with [plantext](https://www.planttext.com/) :
+![Classes Diagram](http://i.imgur.com/LO6Ad6a.png)
+... or generate it with [plantext](https://www.planttext.com/) :
 ```
 @startuml
 title Mediator Pattern
@@ -62,8 +63,8 @@ User <|-left- Room
 @enduml
 ```
 
-Sequence Diagram [1 via](http://i.imgur.com/C8XQoZw.png), [2 vias](http://i.imgur.com/cpYuWv9.png) or with
- [plantext](https://www.planttext.com/) :
+Sequence Diagram [1 via](http://i.imgur.com/C8XQoZw.png), [2 vias](http://i.imgur.com/cpYuWv9.png)
+... or generate it with [plantext](https://www.planttext.com/) :
 ```
 @startuml
 
