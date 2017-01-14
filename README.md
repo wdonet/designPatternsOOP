@@ -6,8 +6,8 @@ Design pattern is a general reusable solution to a commonly occurring problem wi
 - Facilitates maintainability
 - Improves code's readability
 
-Now, we are going to talk about
-> how **Design Patterns** in **Object Oriented Programming** work
+Well, it's time to talk about:
+> How **Design Patterns** in **Object Oriented Programming** work
 > (with [Groovy](http://www.groovy-lang.org/) code).
 
 You'll find them organized by folder.  There in, you can see explanation at their own **Readme.md** and working **code** with best practices and tips.
