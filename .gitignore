@@ -1,4 +1,12 @@
 out/
+build/
+target/
+gradle/
+.gradle/
+
+gradlew
+gradlew.bat
+
 *.idea/
 *.iml
 *.class
