@@ -1,7 +1,22 @@
 package design.patterns.factory.creator.concrete
 
-/**
- * Created by ahernandez on 1/13/17.
- */
-class ChicagoPizzaStore {
+import design.patterns.factory.PizzaStore
+import design.patterns.factory.product.Pizza
+import design.patterns.factory.product.concrete.chicago.ChicagoStyleCheesePizza
+import design.patterns.factory.product.concrete.chicago.ChicagoStylePepperoniPizza
+import design.patterns.factory.product.concrete.chicago.ChicagoStyleVeggiePizza
+
+class ChicagoPizzaStore extends PizzaStore {
+    @Override
+    Pizza createPizza(String type) {
+        Pizza pizza
+        if (type.equalsIgnoreCase("cheese")) {
+            pizza = new ChicagoStyleCheesePizza()
+        } else if (type.equalsIgnoreCase("pepperoni")) {
+            pizza = new ChicagoStylePepperoniPizza()
+        } else if (type.equalsIgnoreCase("veggie")) {
+            pizza = new ChicagoStyleVeggiePizza()
+        }
+        return pizza
+    }
 }

@@ -1,7 +1,7 @@
-import design.patterns.factory.CaliforniaPizzaStore
-import design.patterns.factory.ChicagoPizzaStore
-import design.patterns.factory.NYPizzaStore
 import design.patterns.factory.PizzaStore
+import design.patterns.factory.creator.concrete.CaliforniaPizzaStore
+import design.patterns.factory.creator.concrete.ChicagoPizzaStore
+import design.patterns.factory.creator.concrete.NYPizzaStore
 
 PizzaStore nyPizzaStore = new NYPizzaStore()
 PizzaStore chicagoPizzaStore = new ChicagoPizzaStore()

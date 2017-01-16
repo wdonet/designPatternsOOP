@@ -1,4 +1,4 @@
-package design.patterns.factory.product.concrete.style.chicago
+package design.patterns.factory.product.concrete.chicago
 
 import design.patterns.factory.product.Pizza
 
