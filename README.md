@@ -22,7 +22,7 @@ Creational
 - Factory Method
 
 Structural
-- Adapter
+- [Adapter](Adapter)
 
 Behavioral
 - [Mediator](Mediator)
