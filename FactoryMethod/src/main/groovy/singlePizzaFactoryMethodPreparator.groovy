@@ -1,3 +1,5 @@
+
+
 abstract class Pizza {
     abstract void prepare()
 }

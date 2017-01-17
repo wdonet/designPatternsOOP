@@ -4,7 +4,7 @@ import ns.learning.patterns.adapter.txnsystem.domain.CardData
 import ns.learning.patterns.adapter.txnsystem.domain.TransactionResult
 import ns.learning.patterns.adapter.txnsystem.service.Service
 import ns.learning.patterns.adapter.txnsystem.service.banamex.BanamexService
-import org.apache.tools.ant.taskdefs.optional.extension.Specification
+import spock.lang.Specification
 
 class BanamexTest extends Specification {
 

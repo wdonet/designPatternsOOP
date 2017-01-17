@@ -1,4 +1,4 @@
-package design.patterns.factory
+package design.patterns.factory.creator
 
 import design.patterns.factory.product.Pizza
 
