@@ -1,2 +1,2 @@
-include 'AbstractFactory', 'Adapter', 'FactoryMethod', 'Mediator'
+include 'AbstractFactory', 'Adapter', 'FactoryMethod', 'Mediator', 'Observer'
 
