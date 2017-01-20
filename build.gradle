@@ -1,0 +1,22 @@
+subprojects {
+    apply plugin: 'groovy'
+
+    version = '1.0.0-SNAPSHOT'
+    group = 'design.patterns'
+    configurations.compile.transitive = true
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile 'org.codehaus.groovy:groovy-all:2.4.6'
+
+        testCompile 'junit:junit:4.12'
+        testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    }
+}
+
+task createGradleWrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}

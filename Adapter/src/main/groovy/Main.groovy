@@ -14,7 +14,7 @@ def services = [
         "PROSA"   : new ProsaService(),
         "AMEX"    : new AmexService()
 ]
-
+String[] args = ["BANAMEX"]
 if (args.length < 1)
     throw new IllegalArgumentException("Missing service name")
 

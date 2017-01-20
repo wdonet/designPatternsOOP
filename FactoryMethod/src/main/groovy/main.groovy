@@ -1,4 +1,4 @@
-import design.patterns.factory.PizzaStore
+import design.patterns.factory.creator.PizzaStore
 import design.patterns.factory.creator.concrete.CaliforniaPizzaStore
 import design.patterns.factory.creator.concrete.ChicagoPizzaStore
 import design.patterns.factory.creator.concrete.NYPizzaStore
