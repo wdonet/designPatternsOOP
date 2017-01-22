@@ -1,6 +1,1 @@
-include 'AbstractFactory'
-include 'Adapter'
-include 'FactoryMethod'
-include 'Mediator'
-include "Proxy"
-
+include 'AbstractFactory', 'Adapter', 'FactoryMethod', 'Mediator', 'Proxy', 'Iterator'
