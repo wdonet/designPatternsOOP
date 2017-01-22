@@ -11,7 +11,7 @@ Creates a class implementing the desired interface that maps and delegates the r
 ### Pros
 - Reuse existent code even when it isn't compatible directly with the system which requires it.  
 
-## Realted design patterns
+## Related design patterns
 - Adapter is also called**Wrapper**
 - While Adapter achieves the interaction between two existent and originally incompatible components,**Bridge**
   proposes a way to design future components to be compatible with the existent code decoupling interface 
