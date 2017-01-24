@@ -1,5 +1,5 @@
 # Proxy Pattern (Structural)
->Allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class
+>Provides a placeholder for another object to control access, reduce cost, and reduce complexity
 
 ## Problem 
 - You want/need to instantiate some object until it is required by the first time
