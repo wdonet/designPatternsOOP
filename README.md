@@ -1,4 +1,5 @@
 # Design Patterns for OOP
+[![Build Status](https://travis-ci.org/wdonet/designPatternsOOP.svg?branch=master)](https://travis-ci.org/wdonet/designPatternsOOP)
 
 Design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. In other words, we can say that Design Pattern provides proven solution to solve commonly occurring problems in software (generally big) applications. The advantages of using them are listed below.
 
