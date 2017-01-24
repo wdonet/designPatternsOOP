@@ -1,6 +1,8 @@
-include 'AbstractFactory'
-include 'Adapter'
-include 'FactoryMethod'
-include 'Mediator'
-include "Proxy"
+//Creational
+include 'AbstractFactory', 'FactoryMethod'
 
+//Behavioral
+include 'Mediator', 'Iterator'
+
+//Structural
+include 'Adapter', 'Proxy'
