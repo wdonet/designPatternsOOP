@@ -1,5 +1,6 @@
 import net.wdo.domain.product.CheeseSticks
 import net.wdo.domain.product.Fries
+import net.wdo.factories.AbstractFoodFactory
 import net.wdo.factories.ItalianStyleFactory
 import net.wdo.factories.MexaStyleFactory
 import net.wdo.factories.StyleFactoryCreator
@@ -14,8 +15,8 @@ class AbstractFactoryTest extends Specification{
 
     def "should create Pizza Factory"() {
         when:
-        def mexaFactory = creator.create(MEXA)
-        def italianFactory = creator.create(ITALIAN)
+        AbstractFoodFactory mexaFactory = creator.create(MEXA)
+        AbstractFoodFactory italianFactory = creator.create(ITALIAN)
 
         then:
         mexaFactory instanceof MexaStyleFactory
@@ -26,6 +27,9 @@ class AbstractFactoryTest extends Specification{
         expect:
         creator.create(style).preparePizza().prepare() == "Preparing $text Pizza".toString()
         creator.create(style).preparePizza().bake() == "Baking $text Pizza".toString()
+        //just for reference
+        println creator.create(style).preparePizza().prepare()
+        println creator.create(style).preparePizza().bake()
 
         where:
         style   | text

@@ -16,7 +16,7 @@ Introduces a middle object between two others or more to decouple communication.
 ### Cons
 - I bit confuse at the beginning
 
-## Realted design patterns
+## Related design patterns
 - **Observer Pattern**
   - Similar in decoupling communication
   - _Mediator pattern_ works as the shared hub where other objects of same or different type can communicate between them.  This pattern can also be implemented using Observer pattern.
