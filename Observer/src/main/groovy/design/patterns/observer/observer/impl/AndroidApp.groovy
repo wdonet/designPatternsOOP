@@ -4,13 +4,13 @@ import design.patterns.observer.observer.Observer
 import design.patterns.observer.subject.Subject
 
 
-class AndoridApp implements Observer {
+class AndroidApp implements Observer {
 
     private String news
 
     private Subject subject
 
-    AndoridApp(Subject subject) {
+    AndroidApp(Subject subject) {
         this.subject = subject
         subject.registerObserver(this)
     }
@@ -22,5 +22,9 @@ class AndoridApp implements Observer {
 
     void displayForAndroid() {
         println "AndroidApp displays: $news"
+    }
+
+    String getStatus() {
+        return this.news
     }
 }

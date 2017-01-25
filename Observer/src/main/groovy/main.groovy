@@ -1,4 +1,4 @@
-import design.patterns.observer.observer.impl.AndoridApp
+import design.patterns.observer.observer.impl.AndroidApp
 import design.patterns.observer.observer.impl.IOsApp
 import design.patterns.observer.subject.impl.NewsPaper
 import design.patterns.observer.observer.Observer
@@ -9,7 +9,7 @@ import design.patterns.observer.observer.impl.WebApp
 Subject newsPaper = new NewsPaper()
 
 Observer webApp = new WebApp(newsPaper)
-Observer androidApp = new AndoridApp(newsPaper)
+Observer androidApp = new AndroidApp(newsPaper)
 Observer iosApp = new IOsApp(newsPaper)
 
 newsPaper.setNews("News at day 1")

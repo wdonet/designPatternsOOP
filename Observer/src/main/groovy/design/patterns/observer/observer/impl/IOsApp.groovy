@@ -22,4 +22,8 @@ class IOsApp implements Observer {
     void displayForIOs() {
         println "IOsApp displays: $news"
     }
+
+    String getStatus() {
+        return this.news
+    }
 }

@@ -22,4 +22,8 @@ class WebApp implements Observer {
     void displayForWeb() {
         println "WebApp displays: $news"
     }
+
+    String getStatus() {
+        return this.news
+    }
 }
