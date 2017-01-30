@@ -19,5 +19,5 @@ focusing in the details of the output format implementation. The output writers 
 
 ## Reference
 
-https://sourcemaking.com/design_patterns/builder
-http://www.php5dp.com/php-builder-design-pattern-part-i-one-process-many-representations/
+- https://sourcemaking.com/design_patterns/builder
+- http://www.php5dp.com/php-builder-design-pattern-part-i-one-process-many-representations/

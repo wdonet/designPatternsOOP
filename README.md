@@ -19,8 +19,9 @@ Hopefully the explanation is plenty and the code, simple and clear for the major
 (Alphabetically)
 
 Creational
-- Abstract Factory
-- Factory Method
+- [Abstract Factory](AbstractFactory)
+- [Builder](Builder)
+- [Factory Method](FactoryMethod)
 
 Structural
 - [Adapter](Adapter)
@@ -28,3 +29,4 @@ Structural
 
 Behavioral
 - [Mediator](Mediator)
+- [Observer](Observer)
