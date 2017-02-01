@@ -26,6 +26,7 @@ Creational
 Structural
 - [Adapter](Adapter)
 - [Proxy](Proxy)
+- [Facade](Facade)
 
 Behavioral
 - [Mediator](Mediator)
