@@ -31,3 +31,4 @@ Structural
 Behavioral
 - [Mediator](Mediator)
 - [Observer](Observer)
+- [Iterator](Iterator)
