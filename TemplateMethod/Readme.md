@@ -1,5 +1,5 @@
-# Iterator Pattern (Behavioral)
-> Defines the skeleton of an algorithm split in steps that can be redefined by the specificity levels.
+# Template Method Pattern (Behavioral)
+> Defines the skeleton of an algorithm divided in ordered steps that can be redefined by the specificity levels.
 
 ## Problem
 - Two or more components have similarities and might not reuse a common interface or implementation. If a common change is needed for all components it becomes necessary to multiply effort by the number of components.
