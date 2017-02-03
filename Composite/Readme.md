@@ -33,4 +33,4 @@ without ask the type)
 
 ## Reference
 
-- https://sourcemaking.com/design_patterns/builder
+- https://sourcemaking.com/design_patterns/composite
