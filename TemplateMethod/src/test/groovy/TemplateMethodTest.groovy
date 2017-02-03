@@ -33,17 +33,17 @@ class TemplateMethodTest extends Specification {
     def "Intersect findings in the Library"() {
         given:
         AbstractBookFinder finder = new ConcreteLibraryIntersectionBookFinder()
-        def query = "dummies"
+        def query = "angular for dummies"
 
         when:
         List<String> findings = finder.search(query)
 
         then:
         findings != null
-        findings.size() == 2
+        findings.size() == 1
+        println "=== Highlighted ==="
         for (String highlighted : findings) {
             println highlighted
-            highlighted.contains(query.toUpperCase())
         }
     }
 

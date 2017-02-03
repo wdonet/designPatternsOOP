@@ -3,6 +3,12 @@ package net.wdo.domain
 import org.apache.commons.collections4.CollectionUtils
 
 class ConcreteLibraryIntersectionBookFinder extends AbstractBookFinder {
+    @Override
+    protected List<String> getWordsToRemove() {
+        List<String> toRemove = new ArrayList<>()
+        toRemove.add "for"
+        return toRemove
+    }
 
     @Override
     List<String> doSimpleSearchOn(String s) {
@@ -16,8 +22,7 @@ class ConcreteLibraryIntersectionBookFinder extends AbstractBookFinder {
         return all.findAll {it -> it.toLowerCase()
                 .split(",")[2]
                 .trim()
-                .toLowerCase()
-                .contains(s)}
+                .contains(s.toLowerCase())}
     }
 
     @Override
@@ -30,8 +35,9 @@ class ConcreteLibraryIntersectionBookFinder extends AbstractBookFinder {
 
     @Override
     protected List<String> highlight(List<String> books, List<String> wordsToHighlight) {
-        List<String> highlighted = new ArrayList<>()
+        List<String> highlighted = null
         for (String word : wordsToHighlight) {
+            highlighted = new ArrayList<>()
             for (String title : books) {
                 int init = title.toLowerCase().indexOf(word)
                 if (init > 0) {
