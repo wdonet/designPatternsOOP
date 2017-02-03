@@ -5,5 +5,5 @@ include 'AbstractFactory', 'FactoryMethod', 'Builder'
 include 'Mediator', 'Iterator', 'Observer'
 
 //Structural
-include 'Adapter', 'Proxy', 'Facade'
+include 'Adapter', 'Proxy', 'Facade', 'Composite'
 
