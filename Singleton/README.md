@@ -1,4 +1,4 @@
-# design.pattern.singleton.Singleton Pattern (Creational)
+Singleton Pattern (Creational)
 
 >  The design.pattern.singleton.Singleton Pattern ensures a class has only one instance, and provides a global point of 
 access to it.
@@ -17,7 +17,7 @@ sorts of problems like incorrect program behavior, overuse of resources, or inco
 ---
 ## Solution
 
-the design.pattern.singleton.Singleton Pattern ensures one and only one object is instantiated for a given class also 
+the Singleton Pattern ensures one and only one object is instantiated for a given class also 
 gives us a global point of access
 
 ---
@@ -33,7 +33,7 @@ combined with a static variable (At least on Java based languages)
 ---
 ## Actors
 
-![design.pattern.singleton.Singleton UML](singletonUML.png)
+![Singleton UML](singletonUML.png)
 
 - getInstance():  static method, so you can conveniently access this method from anywhere in your code using design.pattern.singleton.Singleton.getInstance(). 
 - instance: The instance is a class variable which holds our one and only one instance of design.pattern.singleton.Singleton
@@ -42,7 +42,7 @@ combined with a static variable (At least on Java based languages)
 ---
 ## Applicability
 
-Use design.pattern.singleton.Singleton pattern when:
+Use Singleton pattern when:
 
 - There must be exactly one instance of a class, and it must be accessible to clients from a well-known access point.
 
@@ -50,4 +50,4 @@ Use design.pattern.singleton.Singleton pattern when:
 ## Benefits
 
 - Controlled access to sole instance
-- The design.pattern.singleton.Singleton pattern is an improvement over global variables
+- The Singleton pattern is an improvement over global variables
