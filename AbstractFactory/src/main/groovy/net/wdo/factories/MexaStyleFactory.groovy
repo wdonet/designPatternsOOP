@@ -1,9 +1,9 @@
 package net.wdo.factories
 
-import net.wdo.domain.AbstractPizza
-import net.wdo.domain.AbstractSide
-import net.wdo.domain.product.Fries
-import net.wdo.domain.product.MexaPizza
+import net.wdo.AbstractPizza
+import net.wdo.AbstractSide
+import net.wdo.product.Fries
+import net.wdo.product.MexaPizza
 
 class MexaStyleFactory extends AbstractFoodFactory {
 

@@ -1,5 +1,5 @@
-import net.wdo.domain.product.CheeseSticks
-import net.wdo.domain.product.Fries
+import net.wdo.product.CheeseSticks
+import net.wdo.product.Fries
 import net.wdo.factories.AbstractFoodFactory
 import net.wdo.factories.ItalianStyleFactory
 import net.wdo.factories.MexaStyleFactory

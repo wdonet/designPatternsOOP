@@ -1,7 +1,7 @@
-import net.wdo.domain.Room
-import net.wdo.domain.SimpleRoom
-import net.wdo.domain.SuperUser
-import net.wdo.domain.User
+import net.wdo.Room
+import net.wdo.SimpleRoom
+import net.wdo.SuperUser
+import net.wdo.User
 import spock.lang.Specification
 
 class MediatorTest extends Specification {
