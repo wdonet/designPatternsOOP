@@ -1,4 +1,4 @@
-package net.wdo
+package net.wdo.domain
 
 import org.apache.commons.collections4.CollectionUtils
 

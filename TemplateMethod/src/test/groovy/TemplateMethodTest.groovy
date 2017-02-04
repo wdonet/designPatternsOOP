@@ -1,7 +1,7 @@
-import net.wdo.AbstractBookFinder
-import net.wdo.ConcreteCloudUnionBookFinder
-import net.wdo.ConcreteFolderAllBookFinder
-import net.wdo.ConcreteLibraryIntersectionBookFinder
+import net.wdo.domain.AbstractBookFinder
+import net.wdo.domain.ConcreteCloudUnionBookFinder
+import net.wdo.domain.ConcreteFolderAllBookFinder
+import net.wdo.domain.ConcreteLibraryIntersectionBookFinder
 import spock.lang.Specification
 
 class TemplateMethodTest extends Specification {

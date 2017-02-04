@@ -1,4 +1,4 @@
-package net.wdo
+package net.wdo.domain
 
 class ConcreteFolderAllBookFinder extends AbstractBookFinder {
 
@@ -8,7 +8,7 @@ class ConcreteFolderAllBookFinder extends AbstractBookFinder {
         toRemove.add("in")
         toRemove.add("at")
         toRemove.add("from")
-        toRemove.addAll(Object.getWordsToRemove())
+        toRemove.addAll(super.getWordsToRemove())
         return toRemove
     }
 

@@ -1,4 +1,4 @@
-package net.wdo
+package net.wdo.domain
 
 abstract class AbstractBookFinder {
     private final List<String> wordsToRemove = Arrays.asList("the", "an", "of")
