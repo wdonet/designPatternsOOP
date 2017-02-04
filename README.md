@@ -33,4 +33,4 @@ Behavioral
 - [Observer](Observer)
 - [Iterator](Iterator)
 - [Template Method](TemplateMethod)
-- [Strategy](Stratege)
+- [Strategy](Strategy)
