@@ -27,6 +27,7 @@ Structural
 - [Adapter](Adapter)
 - [Proxy](Proxy)
 - [Facade](Facade)
+- [Composite](Composite)
 
 Behavioral
 - [Mediator](Mediator)
