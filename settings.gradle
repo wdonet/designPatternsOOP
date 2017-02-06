@@ -2,7 +2,7 @@
 include 'AbstractFactory', 'FactoryMethod', 'Builder'
 
 //Behavioral
-include 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy'
+include 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy', 'State'
 
 //Structural
 include 'Adapter', 'Proxy', 'Facade', 'Composite'
