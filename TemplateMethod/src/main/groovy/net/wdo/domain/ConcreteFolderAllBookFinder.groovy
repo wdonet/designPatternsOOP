@@ -1,7 +1,5 @@
 package net.wdo.domain
 
-import org.apache.commons.collections4.CollectionUtils
-
 class ConcreteFolderAllBookFinder extends AbstractBookFinder {
 
     @Override

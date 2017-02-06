@@ -1,6 +1,6 @@
-import net.wdo.domain.iterable.Answer
-import net.wdo.domain.iterator.QuestionAggregate
-import net.wdo.domain.iterator.QuestionConcreteAggregate
+import net.wdo.iterable.Answer
+import net.wdo.iterator.QuestionAggregate
+import net.wdo.iterator.QuestionConcreteAggregate
 import spock.lang.Specification
 
 class IteratorTest extends Specification {
