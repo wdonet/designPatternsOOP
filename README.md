@@ -25,10 +25,14 @@ Creational
 
 Structural
 - [Adapter](Adapter)
-- [Proxy](Proxy)
+- [Composite](Composite)
 - [Facade](Facade)
+- [Proxy](Proxy)
 
 Behavioral
+- [Iterator](Iterator)
 - [Mediator](Mediator)
 - [Observer](Observer)
-- [Iterator](Iterator)
+- [State] 
+- [Strategy](Strategy)
+- [Template Method](TemplateMethod)

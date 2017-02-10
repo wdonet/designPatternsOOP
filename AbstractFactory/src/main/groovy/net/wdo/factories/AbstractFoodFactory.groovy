@@ -1,7 +1,7 @@
 package net.wdo.factories
 
-import net.wdo.domain.AbstractPizza
-import net.wdo.domain.AbstractSide
+import net.wdo.AbstractPizza
+import net.wdo.AbstractSide
 
 abstract class AbstractFoodFactory {
 

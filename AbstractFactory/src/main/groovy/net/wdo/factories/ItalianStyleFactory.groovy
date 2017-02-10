@@ -1,9 +1,9 @@
 package net.wdo.factories
 
-import net.wdo.domain.AbstractPizza
-import net.wdo.domain.AbstractSide
-import net.wdo.domain.product.CheeseSticks
-import net.wdo.domain.product.ItalianPizza
+import net.wdo.AbstractPizza
+import net.wdo.AbstractSide
+import net.wdo.product.CheeseSticks
+import net.wdo.product.ItalianPizza
 
 class ItalianStyleFactory extends AbstractFoodFactory {
     @Override

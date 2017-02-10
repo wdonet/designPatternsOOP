@@ -1,11 +1,8 @@
 package ns.learning.patterns.builder.service.report
 
-import ns.learning.patterns.builder.service.report.builders.ReportTableBuilder;
-
-import java.util.List;
-
-import ns.learning.patterns.builder.domain.Client;
-import ns.learning.patterns.builder.service.ClientService;
+import ns.learning.patterns.builder.domain.Client
+import ns.learning.patterns.builder.service.ClientService
+import ns.learning.patterns.builder.service.report.builders.ReportTableBuilder
 
 class ClientReport {
 

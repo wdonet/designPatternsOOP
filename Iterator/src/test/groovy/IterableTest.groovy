@@ -1,5 +1,5 @@
-import net.wdo.domain.iterable.Answer
-import net.wdo.domain.iterable.Question
+import net.wdo.iterable.Answer
+import net.wdo.iterable.Question
 import spock.lang.Specification
 
 class IterableTest extends Specification {
