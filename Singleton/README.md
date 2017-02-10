@@ -1,4 +1,4 @@
-Singleton Pattern (Creational)
+# Singleton Pattern (Creational)
 
 >  The Singleton Pattern ensures a class has only one instance, and provides a global point of 
 access to it.
@@ -51,3 +51,14 @@ Use Singleton pattern when:
 
 - Controlled access to sole instance
 - The Singleton pattern is an improvement over global variables
+
+
+--
+## Plus
+
+Groovy provides an annotation for singleton
+
+- Annotate the class with @Singleton
+- This class cannot be instantiated directly
+- Must be accessed through the generated instance field created by the annotation at compile time.
+- Can be customized to be Lazy, to have constructors and/or to change the default property for accessing
