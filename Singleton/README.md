@@ -25,19 +25,19 @@ gives us a global point of access
 
 - Ensures you have at most one instance of a class in your application
 - Provides a global access point to that instance
-- Implementation of the design.pattern.singleton.Singleton Pattern makes use of a private constructor, a static method 
+- Implementation of the Singleton Pattern makes use of a private constructor, a static method 
 combined with a static variable (At least on Java based languages)
 - Be aware of multithreading
-- design.pattern.singleton.Singleton is created in a lazy/eager manner
+- Singleton is created in a lazy/eager manner
 
 ---
 ## Actors
 
 ![Singleton UML](singletonUML.png)
 
-- getInstance():  static method, so you can conveniently access this method from anywhere in your code using design.pattern.singleton.Singleton.getInstance(). 
-- instance: The instance is a class variable which holds our one and only one instance of design.pattern.singleton.Singleton
-- design.pattern.singleton.Singleton(): private constructor, so it's accessible only inside the class
+- getInstance():  static method, so you can conveniently access this method from anywhere in your code using Singleton.getInstance(). 
+- instance: The instance is a class variable which holds our one and only one instance of Singleton
+- Singleton(): private constructor, so it's accessible only inside the class
 
 ---
 ## Applicability
