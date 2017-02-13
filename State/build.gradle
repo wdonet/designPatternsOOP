@@ -1,0 +1,3 @@
+dependencies {
+    testCompile group: 'cglib', name: 'cglib-nodep', version: '2.2'
+}

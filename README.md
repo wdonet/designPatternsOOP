@@ -33,6 +33,6 @@ Behavioral
 - [Iterator](Iterator)
 - [Mediator](Mediator)
 - [Observer](Observer)
-- [State] 
+- [State](State) 
 - [Strategy](Strategy)
 - [Template Method](TemplateMethod)
