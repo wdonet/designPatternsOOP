@@ -51,7 +51,7 @@ Use Decorator pattern:
 
 - Add responsibilities at run time 
 - Open closed principle
-- Decorator prevents the proliferation of subclasses leading to less complexity and confusion
+- Decorator prevents the proliferation of subclasses
 
 ---
 ## Issues
