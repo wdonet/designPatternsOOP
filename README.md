@@ -22,6 +22,7 @@ Creational
 - [Abstract Factory](AbstractFactory)
 - [Builder](Builder)
 - [Factory Method](FactoryMethod)
+- [Prototype](Prototype)
 
 Structural
 - [Adapter](Adapter)

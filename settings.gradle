@@ -1,5 +1,5 @@
 //Creational
-include 'AbstractFactory', 'FactoryMethod', 'Builder', 'Singleton'
+include 'AbstractFactory', 'FactoryMethod', 'Builder', 'Singleton', 'Prototype'
 
 //Behavioral
 include 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy', 'State'

@@ -20,6 +20,7 @@ class VisaParserTest extends Specification {
         message.each { data -> visaParser.write(visaMessage, data) }
 
         then:
+        println visaMessage.command
         visaParser.currentState instanceof MessageValidState && visaMessage.command == "C0"
 
 

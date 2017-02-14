@@ -22,6 +22,8 @@ class VisaProtocolTest extends Specification {
 
         Thread.currentThread().sleep(500)
 
+        t.interrupt()
+
         then:
         byte[] result = os.toByteArray()
         boolean success = true
