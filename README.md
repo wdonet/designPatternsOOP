@@ -22,6 +22,7 @@ Creational
 - [Abstract Factory](AbstractFactory)
 - [Builder](Builder)
 - [Factory Method](FactoryMethod)
+- [Prototype](Prototype)
 
 Structural
 - [Adapter](Adapter)
@@ -33,6 +34,6 @@ Behavioral
 - [Iterator](Iterator)
 - [Mediator](Mediator)
 - [Observer](Observer)
-- [State] 
+- [State](State) 
 - [Strategy](Strategy)
 - [Template Method](TemplateMethod)
