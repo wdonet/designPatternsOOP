@@ -31,3 +31,5 @@ General Diagram:
 ahd about the flow
 
 ![diagram](http://i.imgur.com/QpFgMVE.jpg)
+
+[![Video Description](http://img.youtube.com/vi/wbYjeMctOdE/0.jpg)](http://www.youtube.com/watch?v=wbYjeMctOdE)
