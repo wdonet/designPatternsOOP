@@ -57,3 +57,5 @@ StrategyClass <|--left-- Client
 
 @enduml
 ```
+
+[![Video Description](http://img.youtube.com/vi/EZE0lhfSssk/0.jpg)](http://www.youtube.com/watch?v=EZE0lhfSssk)
