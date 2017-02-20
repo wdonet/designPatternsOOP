@@ -10,6 +10,7 @@ class CentCoinHandler extends CoinHandler {
         int totalCoins = Math.abs(request.getAmount() / 0.01)
         printTotalCoins(totalCoins, CENT)
         request.reduce(request.getAmount())
+        next(request)
     }
 
 }

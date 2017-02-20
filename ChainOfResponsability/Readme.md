@@ -1,4 +1,4 @@
-# Chain of Responsability Pattern (Behavioral)
+# Chain of Responsibility Pattern (Behavioral)
 > Gives more than one object the chance to handle a request by linking receiving objects together .
 
 ## Problem
@@ -25,6 +25,9 @@
 ## Classes
 
 General Diagram:
+
 ![diagram](http://i.imgur.com/onFgpdX.gif)
-or
+
+ahd about the flow
+
 ![diagram](http://i.imgur.com/QpFgMVE.jpg)

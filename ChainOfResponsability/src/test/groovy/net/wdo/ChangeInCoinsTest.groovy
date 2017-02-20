@@ -12,6 +12,7 @@ class ChangeInCoinsTest extends Specification {
         CoinHandler dollarsHandler = setHandlers()
 
         when:
+        println "\nChanging a bill of " + request.getAmount()
         dollarsHandler.handleRequest(request)
 
         then:
@@ -26,6 +27,7 @@ class ChangeInCoinsTest extends Specification {
         CoinHandler dollarsHandler = setHandlers()
 
         when:
+        println "\nChanging a bill of " + request.getAmount()
         dollarsHandler.handleRequest(request)
 
         then:
@@ -36,10 +38,11 @@ class ChangeInCoinsTest extends Specification {
         given:
         double bill = 1.0
         RequestForMoneyChange request = new RequestForMoneyChange()
-                .with(bill).on(new Date()).forUser("Tara")
+                .with(bill).on(new Date()).forUser("Frank")
         CoinHandler dollarsHandler = setHandlers()
 
         when:
+        println "\nChanging a bill of " + request.getAmount()
         dollarsHandler.handleRequest(request)
 
         then:
