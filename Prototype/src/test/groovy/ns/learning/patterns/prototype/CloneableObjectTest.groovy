@@ -16,6 +16,7 @@ class CloneableObjectTest extends Specification {
         f1.getClass() == f2.getClass()
         f1.randomState == f2.randomState
         f1.stateList == f2.stateList
+        f1 != f2
 
         f1.stateList.remove(0)
 
@@ -34,6 +35,7 @@ class CloneableObjectTest extends Specification {
         f1.getClass() == f2.getClass()
         f1.randomState != f2.randomState
         f1.stateList != f2.stateList
+        f1 != f2
 
         f1.stateList.remove(0)
 
