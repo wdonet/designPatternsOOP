@@ -91,3 +91,5 @@ ConcreteIterator <|--left-- ConcreteAggregate
 
 @enduml
 ```
+
+[![Video Description](http://img.youtube.com/vi/r228zgiMPaU/0.jpg)](http://www.youtube.com/watch?v=r228zgiMPaU)
