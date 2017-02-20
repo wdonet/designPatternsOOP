@@ -10,11 +10,11 @@ class VisitorTest extends Specification {
         String bold = "Pattern Design"
         String hyperLink = "click to start"
 
-        List<DocumentParser> documentStructure = new ArrayList<>()
+        List<DocumentPart> documentStructure = new ArrayList<>()
 
-        DocumentParser plainTextParser = new PlainText()
-        DocumentParser boldTextParser = new BoldText()
-        DocumentParser hyperLinkTextParser = new HyperLink()
+        DocumentPart plainTextParser = new PlainText()
+        DocumentPart boldTextParser = new BoldText()
+        DocumentPart hyperLinkTextParser = new HyperLink()
 
         plainTextParser.setText(plain)
         boldTextParser.setText(bold)

@@ -2,7 +2,7 @@ package design.pattern.after.visitor
 
 class Document {
 
-    private List<DocumentParser> documentParts
+    private List<DocumentPart> documentParts
 
     void accept(Visitor visitor) {
         documentParts.forEach({
@@ -11,7 +11,7 @@ class Document {
         })
     }
 
-    void setDocumentParts(List<DocumentParser> documentParts) {
+    void setDocumentParts(List<DocumentPart> documentParts) {
         this.documentParts = documentParts
     }
 }

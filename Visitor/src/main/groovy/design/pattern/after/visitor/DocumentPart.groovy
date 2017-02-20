@@ -1,6 +1,6 @@
 package design.pattern.after.visitor
 
-abstract  class DocumentParser {
+abstract  class DocumentPart {
     protected String text
 
     abstract void accept(Visitor visitor)

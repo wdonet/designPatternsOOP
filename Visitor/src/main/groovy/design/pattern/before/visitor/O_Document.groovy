@@ -2,7 +2,7 @@ package design.pattern.before.visitor
 
 class O_Document {
 
-    private List<O_DocumentParser> documentParts
+    private List<O_DocumentPart> documentParts
 
     String toHTML() {
         String output = ""
@@ -22,7 +22,7 @@ class O_Document {
         return output
     }
 
-    void setDocumentParts(List<O_DocumentParser> documentParts) {
+    void setDocumentParts(List<O_DocumentPart> documentParts) {
         this.documentParts = documentParts
     }
 }

@@ -1,6 +1,6 @@
 package design.pattern.before.visitor
 
-class O_BoldText extends O_DocumentParser {
+class O_BoldText extends O_DocumentPart {
     @Override
     String toHTML() {
         return "<bold>${this.text}</bold> "
@@ -15,7 +15,7 @@ class O_BoldText extends O_DocumentParser {
     }
 }
 
-class O_PlainText extends O_DocumentParser {
+class O_PlainText extends O_DocumentPart {
     @Override
     String toHTML() {
         return "${this.text} "
@@ -30,7 +30,7 @@ class O_PlainText extends O_DocumentParser {
     }
 }
 
-class O_HyperLink extends O_DocumentParser {
+class O_HyperLink extends O_DocumentPart {
     @Override
     String toHTML() {
         return "<a href='#'>${this.text}</a> "

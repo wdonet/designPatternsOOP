@@ -1,6 +1,6 @@
 package design.pattern.after.visitor
 
-class BoldText extends DocumentParser {
+class BoldText extends DocumentPart {
     @Override
     void accept(Visitor visitor) {
         // Own Code
@@ -8,7 +8,7 @@ class BoldText extends DocumentParser {
     }
 }
 
-class PlainText extends DocumentParser {
+class PlainText extends DocumentPart {
     @Override
     void accept(Visitor visitor) {
         // Own code
@@ -16,7 +16,7 @@ class PlainText extends DocumentParser {
     }
 }
 
-class HyperLink extends DocumentParser {
+class HyperLink extends DocumentPart {
     @Override
     void accept(Visitor visitor) {
         // Own code

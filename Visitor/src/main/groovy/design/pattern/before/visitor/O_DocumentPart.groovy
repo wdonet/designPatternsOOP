@@ -1,6 +1,6 @@
 package design.pattern.before.visitor
 
-abstract class O_DocumentParser {
+abstract class O_DocumentPart {
 
     protected String text
 
