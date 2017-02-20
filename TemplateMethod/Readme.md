@@ -53,3 +53,5 @@ ConcreteClass2 <|--left-- Client
 
 @enduml
 ```
+
+[![Video Description](http://img.youtube.com/vi/HbuChDbl68g/0.jpg)](http://www.youtube.com/watch?v=HbuChDbl68g)
