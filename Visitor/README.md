@@ -21,17 +21,17 @@ Perform many **distinct and unrelated operations** over an structure of elements
 ## Actors
 ![Visitor UML](visitorUML.png)
 
-#### - Visitor: 
-- Declares a **visit** operation for each class of **ConcreteElement** in the object structure
-- The operation's signature identifies the class that sends the **visit** request
-#### - ConcreteVisitor:
-- Provides the context for the algorithm and stores its local state
-- Each operation implements the algorithm defined for the corresponding class of object in the structure
-- This state often accumulates results during the traversal of the structure
-#### - Element:
-- Defines an **accept** operation that takes a visitor as an argument
-#### - ConcreteElement:
-- Implementation which performs the **visit** operation from the **visitor** in the **action** method
+- Visitor: 
+  - Declares a **visit** operation for each class of **ConcreteElement** in the object structure
+  - The operation's signature identifies the class that sends the **visit** request
+- ConcreteVisitor:
+  - Provides the context for the algorithm and stores its local state
+  - Each operation implements the algorithm defined for the corresponding class of object in the structure
+  - This state often accumulates results during the traversal of the structure
+- Element:
+  - Defines an **accept** operation that takes a visitor as an argument
+- ConcreteElement:
+  - Implementation which performs the **visit** operation from the **visitor** in the **action** method
   
 ---
 ## Applicability
