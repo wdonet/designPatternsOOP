@@ -28,7 +28,7 @@ General Diagram:
 
 ![diagram](http://i.imgur.com/onFgpdX.gif)
 
-ahd about the flow
+and about the flow
 
 ![diagram](http://i.imgur.com/QpFgMVE.jpg)
 
