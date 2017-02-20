@@ -2,7 +2,7 @@ package net.wdo
 
 import spock.lang.Specification
 
-class ChangeInCoinsTest extends Specification{
+class ChangeInCoinsTest extends Specification {
 
     def 'Should change 10 dollar bill in coins'() {
         given:
@@ -15,7 +15,7 @@ class ChangeInCoinsTest extends Specification{
         dollarsHandler.handleRequest(request)
 
         then:
-        true
+        request.getAmount() == Double.valueOf(0.0)
     }
 
     def 'Should change 5 dollar bill in coins'() {
@@ -29,7 +29,7 @@ class ChangeInCoinsTest extends Specification{
         dollarsHandler.handleRequest(request)
 
         then:
-        true
+        request.getAmount() == Double.valueOf(0.0)
     }
 
     def 'Should change 1 dollar bill in coins'() {
@@ -43,7 +43,7 @@ class ChangeInCoinsTest extends Specification{
         dollarsHandler.handleRequest(request)
 
         then:
-        true
+        request.getAmount() == Double.valueOf(0.0)
     }
 
     private static CoinHandler setHandlers() {
