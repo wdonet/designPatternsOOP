@@ -10,7 +10,7 @@ class CloneableObjectTest extends Specification {
         CloneableObject f1 = new CloneableObject()
 
         when:
-        CloneableObject f2 = f1.clone()
+        CloneableObject f2 = (CloneableObject)f1.clone()
 
         then:
         f1.getClass() == f2.getClass()
@@ -46,9 +46,9 @@ class CloneableObjectTest extends Specification {
         CloneableObject f1 = new CloneableObject()
 
         when:
-        CloneableObject f2 = f1.clone()
+        CloneableObject f2 = (CloneableObject)f1.clone()
         f1.randomState = 10
-        CloneableObject f3 = f1.clone()
+        CloneableObject f3 = (CloneableObject)f1.clone()
 
         then:
         f1.randomState != f2.randomState

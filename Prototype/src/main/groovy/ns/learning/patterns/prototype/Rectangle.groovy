@@ -1,6 +1,6 @@
 package ns.learning.patterns.prototype
 
-class Rectangle extends Shape{
+class Rectangle implements Shape{
 
     Rectangle(){
         println "Rectangle constructor"

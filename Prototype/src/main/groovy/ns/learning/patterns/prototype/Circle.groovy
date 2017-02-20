@@ -1,6 +1,6 @@
 package ns.learning.patterns.prototype
 
-class Circle extends Shape{
+class Circle implements Shape{
 
     Circle(){
         println "Circle constructor"

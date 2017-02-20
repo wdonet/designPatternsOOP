@@ -4,7 +4,7 @@ class ShapeFactory {
     private static HashMap<String, Shape> rootInstances
 
     static {
-        rootInstances = new HashMap<>();
+        rootInstances = new HashMap<>()
 
         rootInstances.put("RECTANGLE", new Rectangle())
         rootInstances.put("CIRCLE", new Circle())
@@ -14,6 +14,6 @@ class ShapeFactory {
     static Shape getShape(String id) {
         Shape shape = rootInstances.get(id)
 
-        return shape != null ? shape.clone() : null
+        return shape != null ? (Shape)shape.clone() : null
     }
 }

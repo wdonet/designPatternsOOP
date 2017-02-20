@@ -1,6 +1,6 @@
 package ns.learning.patterns.prototype
 
-class Triangle extends Shape {
+class Triangle implements Shape {
 
     Triangle() {
         println "Triangle constructor"
