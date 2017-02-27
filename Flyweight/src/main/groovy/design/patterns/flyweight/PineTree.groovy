@@ -6,7 +6,7 @@ class PineTree implements Tree {
     String name = "Pine Tree"
 
     @Override
-    def render(int x, int y, String size) {
-        println "Render $size $name at [$x,$y]"
+    render(int x, int y, int size) {
+        println "Render $name of size[$size] at [$x,$y]"
     }
 }

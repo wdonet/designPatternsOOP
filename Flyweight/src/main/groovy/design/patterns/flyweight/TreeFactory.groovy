@@ -16,4 +16,8 @@ class TreeFactory {
         return trees.get(type)
     }
 
+    static int treesNumber() {
+        trees.size()
+    }
+
 }
