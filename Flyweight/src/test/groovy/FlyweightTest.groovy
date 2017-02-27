@@ -26,7 +26,7 @@ class FlyweightTest extends Specification{
         }
 
         then:
-        2 == TreeFactory.treesNumber()
+        3 == TreeFactory.treesNumber()
 
     }
 
