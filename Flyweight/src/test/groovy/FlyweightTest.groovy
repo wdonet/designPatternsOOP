@@ -1,0 +1,4 @@
+
+class FlyweightTest  extends Specification {
+
+}
