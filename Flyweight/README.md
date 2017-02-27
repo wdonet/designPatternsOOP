@@ -32,7 +32,7 @@ use an unacceptable amount of memory
 ---
 ## Actors
 
-![Flyweight](flyweight-uml.svg)
+![Flyweight](Flyweight-UML.png)
 
 - Flyweight: Declares an interface through which flyweights can receive and act on extrinsic state
 - ConcreteFlyweight: Implements the Flyweight interface and adds intrinsic state
