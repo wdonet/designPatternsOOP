@@ -20,20 +20,28 @@ Hopefully the explanation is plenty and the code, simple and clear for the major
 
 Creational
 - [Abstract Factory](AbstractFactory)
-- [Builder](Builder)
 - [Factory Method](FactoryMethod)
+- [Builder](Builder)
+- [Singleton](Singleton)
 - [Prototype](Prototype)
 
 Structural
 - [Adapter](Adapter)
-- [Composite](Composite)
-- [Facade](Facade)
 - [Proxy](Proxy)
+- [Facade](Facade)
+- [Composite](Composite)
+- [Decorator](Decorator)
 
 Behavioral
-- [Iterator](Iterator)
 - [Mediator](Mediator)
+- [Iterator](Iterator)
 - [Observer](Observer)
-- [State](State) 
-- [Strategy](Strategy)
 - [Template Method](TemplateMethod)
+- [Strategy](Strategy)
+- [State](State)
+- [Chain Of Responsability](ChainOfResponsability)
+- [Visitor](Visitor)
+- [Command](Command)
+
+Other
+- [Object Pool](ObjectPool)
