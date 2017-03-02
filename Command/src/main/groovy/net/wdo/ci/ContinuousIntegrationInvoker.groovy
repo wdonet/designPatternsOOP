@@ -1,4 +1,6 @@
-package net.wdo
+package net.wdo.ci
+
+import net.wdo.Command
 
 class ContinuousIntegrationInvoker {
     enum IS {NOT_STARTED, CLONED, BUILT, DEPLOYED}
@@ -11,9 +13,9 @@ class ContinuousIntegrationInvoker {
     }
 
     void processAllCommands() {
-        for (Command oneCommand : orderedCommands) {
-            oneCommand.execute()
-            theComplexPartOfKeepingInvokerState(oneCommand)
+        orderedCommands.each {
+            it.execute()
+            theComplexPartOfKeepingInvokerState(it)
         }
     }
 
@@ -27,6 +29,10 @@ class ContinuousIntegrationInvoker {
         if (oneCommand instanceof DeployCommand) {
             currentState = IS.DEPLOYED
         }
+    }
+
+    boolean hasNotStarted() {
+        IS.NOT_STARTED == currentState
     }
 
     boolean isCloned() {
