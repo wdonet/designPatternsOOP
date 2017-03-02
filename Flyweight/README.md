@@ -8,11 +8,6 @@ Designing objects with a fine granularity provides optimal flexibility, but can 
 expensive in terms of performance and memory usage
 
 ---
-## Solution
-
-Use sharing to support large numbers of fine-grained objects efficiently
-
----
 ## Definitions
 
 - The **intrinsic state** is the kind of data that’s not specific to a single instance of an object and 
