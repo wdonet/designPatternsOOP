@@ -13,7 +13,7 @@ The pool has the capacity of creating more instances if required but, if possibl
 existent and unused instance.
 
 ## General diagram
-[Object Pool](objectPool.png)
+![Object Pool](objectPool.png)
 
 ## Actors
 - **Reusable**. Wraps the limited resource, will be shared by several clients for a limited amount of time.
