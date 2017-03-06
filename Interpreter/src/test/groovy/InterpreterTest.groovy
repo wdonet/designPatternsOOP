@@ -44,6 +44,19 @@ class InterpreterTest extends Specification {
         0      | new Context().setVariable("var1", 1000).setVariable("var2", 0)
     }
 
+    def "Testing context"() {
+        given:
+        Context context = new Context()
+
+        when:
+        Parser.instance.buildTree("var1 10 5 - =").evaluate(context)
+        Parser.instance.buildTree("var2 3 5 * var1 + =").evaluate(context)
+        Parser.instance.buildTree("var3 var1 var2 + =").evaluate(context)
+
+        then:
+        25 == Parser.instance.buildTree("var3").evaluate(context)
+    }
+
 
     def "Interpret Double expression with unknown characters"() {
         given:

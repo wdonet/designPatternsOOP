@@ -1,7 +1,7 @@
 package ns.learning.patterns.interpreter
 
 class TerminalExpression_Variable implements Expression {
-    private String name
+    String name
 
     TerminalExpression_Variable(String name) {
         this.name = name

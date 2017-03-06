@@ -5,6 +5,7 @@ class Parser {
     public static final String PLUS_SYMBOL = "+"
     public static final String MINUS_SYMBOL = "-"
     public static final String MULTIPLY_SYMBOL = "*"
+    public static final String ASSIGN_SYMBOL = "="
 
     Expression buildTree(String s) {
         Stack<Expression> parseTree = new LinkedList<>()
@@ -25,6 +26,11 @@ class Parser {
                     parseTree.push(expression)
                 } else if (token == MULTIPLY_SYMBOL) {
                     expression = new NonTerminalExpression_Multiply()
+                    expression.right = parseTree.pop()
+                    expression.left = parseTree.pop()
+                    parseTree.push(expression)
+                } else if (token == ASSIGN_SYMBOL) {
+                    expression = new NonTerminalExpression_Assignment()
                     expression.right = parseTree.pop()
                     expression.left = parseTree.pop()
                     parseTree.push(expression)
