@@ -11,7 +11,7 @@ them is to use inheritance, but this approach isn't always flexible enough
 ---
 ## Solution
 
-![InitialImpl.png](InitialImpl.png)
+![problem.png](problem.png)
 
 ![FinalImpl.png](FinalImpl.png)
 
