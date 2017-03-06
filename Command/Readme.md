@@ -8,9 +8,10 @@
 - The commands need to be invoked at different times or different order
 
 ## Solution
-- Provide an interface for all commands
-- Every command should contain a receiver which will be used to perform part of or the whole operation
-- Set an invoker to hold the created commands and later execute them
+- Provide an *interface* for all commands
+- Every command should contain a *receiver* which will be used to perform part of or the whole operation
+- Set an *invoker* to hold the created commands and later execute them
+- The *client* simply creates the concrete commands and sets its receiver
 
 ### Pros
 - Easy to extends since more operations leads to more command classes
