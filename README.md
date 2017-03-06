@@ -20,6 +20,7 @@ Hopefully the explanation is plenty and the code, simple and clear for the major
 
 Creational
 - [Abstract Factory](AbstractFactory)
+- [Builder](Builder)
 - [Factory Method](FactoryMethod)
 - [Builder](Builder)
 - [Singleton](Singleton)
@@ -33,8 +34,9 @@ Structural
 - [Decorator](Decorator)
 
 Behavioral
-- [Mediator](Mediator)
+- [Interpreter](Interpreter)
 - [Iterator](Iterator)
+- [Mediator](Mediator)
 - [Observer](Observer)
 - [Template Method](TemplateMethod)
 - [Strategy](Strategy)

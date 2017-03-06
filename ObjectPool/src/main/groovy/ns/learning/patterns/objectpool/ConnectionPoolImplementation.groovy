@@ -21,17 +21,26 @@ class ConnectionPoolImplementation {
             return reusableConnection
         }
 
+        println("Waiting")
+
         while (reusables.isEmpty()) {
-            wait()
+            wait(1000)
+            println "in queue" + reusables.size()
         }
+
+        println("End waiting")
 
         return reusables.pop()
     }
 
     synchronized void releaseConnection(ReusableConnection reusableConnection) {
+        println "releasing connection"
         reusables.push(reusableConnection)
 
         notifyAll()
+
+        println("notifying threads")
+
     }
 
 }
