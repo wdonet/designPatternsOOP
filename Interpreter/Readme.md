@@ -40,7 +40,7 @@ to the problem solving process.
 
 ##Example
 
-![diagram](example.svg)
+![diagram](interpreter-example.png)
 ... or generate it with [plantext](https://www.planttext.com/) :
 
 @startuml
