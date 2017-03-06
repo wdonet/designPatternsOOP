@@ -8,10 +8,10 @@
 When an abstraction can have one of several possible implementations, the usual way to accommodate 
 them is to use inheritance, but this approach isn't always flexible enough
 
+![problem.png](problem.png)
+
 ---
 ## Solution
-
-![problem.png](problem.png)
 
 ![FinalImpl.png](FinalImpl.png)
 
