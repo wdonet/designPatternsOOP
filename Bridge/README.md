@@ -11,11 +11,6 @@ them is to use inheritance, but this approach isn't always flexible enough
 ![problem.png](problem.png)
 
 ---
-## Solution
-
-![FinalImpl.png](FinalImpl.png)
-
----
 ## Actors
 
 ![Bridge_UML_class_diagram.png](Bridge_UML_class_diagram.png)
@@ -30,6 +25,11 @@ them is to use inheritance, but this approach isn't always flexible enough
   interfaces can be quite different. Typically the Implementor interface provides only primitive operations, 
   and Abstraction defines higher-level operations based on these primitives
 - ConcreteImplementor: Implements the Implementor interface and defines its concrete implementation
+
+---
+## Solution
+
+![FinalImpl.png](FinalImpl.png)
 
 ---
 ## Applicability
