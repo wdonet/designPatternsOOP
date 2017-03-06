@@ -1,4 +1,4 @@
-# Template Method Pattern (Behavioral)
+# Memento Pattern (Behavioral)
 > Provides the ability to restore an object to its previous state
 
 ## Problem
