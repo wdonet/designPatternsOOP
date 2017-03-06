@@ -5,6 +5,12 @@
 Interpret a language 
 
 ## Solution
+Interpreter suggests modeling the domain with a tree of classes where each rule in the grammar is 
+either a 'composite' (a rule that references other rules) or a terminal (a leaf node in a tree structure). 
+
+An abstract base class specifies the method interpret(). Each concrete subclass implements  interpret() 
+by accepting (as an argument) the current state of the language stream, and adding its contribution 
+to the problem solving process.
 
 ## General structure
 ![Interpreter General Diagram](interpreter.png)
@@ -32,10 +38,51 @@ Interpret a language
 - Easier to change and extend the grammar
 - Complex for big grammars 
 
+##Example
+
+@startuml
+
+title "Interpreter Pattern"
+
+class Context  {
+    +setVariable(String name, Number value)
+    +getVariable(String name) : Number
+}
+
+interface  {
+ -- methods --
+ +Number evaluate(Context context)
+}
+
+class TerminalExpression_Number implements Expression {
+    +Number evaluate(Context context)
+}
+
+class TerminalExpression_Variable implements Expression {
+    +Number evaluate(Context context)
+}
+
+class NonTerminalExpression_Minus implements Expression {
+    +Number evaluate(Context context)
+}
+
+class NonTerminalExpression_Plus implements Expression {
+    +Number evaluate(Context context)
+}
+
+class NonTerminalExpression_Multiply implements Expression {
+    +Number evaluate(Context context)
+}
+
+@enduml
+```
+
 
 ## References
 
 https://es.slideshare.net/amanicka/interpreter-pattern-final1
 
 https://sourcemaking.com/design_patterns/interpreter
+
+https://es.wikipedia.org/wiki/Interpreter_(patr%C3%B3n_de_dise%C3%B1o)
 

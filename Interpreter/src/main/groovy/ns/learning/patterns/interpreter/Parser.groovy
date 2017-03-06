@@ -1,11 +1,12 @@
 package ns.learning.patterns.interpreter
 
+@Singleton
 class Parser {
     public static final String PLUS_SYMBOL = "+"
     public static final String MINUS_SYMBOL = "-"
     public static final String MULTIPLY_SYMBOL = "*"
 
-    static Expression buildTree(String s) {
+    Expression buildTree(String s) {
         Stack<Expression> parseTree = new LinkedList<>()
         String[] tokens = s.split(" ", -1)
         Expression expression

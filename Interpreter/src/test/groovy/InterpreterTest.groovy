@@ -9,7 +9,7 @@ class InterpreterTest extends Specification {
         Context context = new Context()
 
         when:
-        Expression expression = Parser.buildTree(inputString)
+        Expression expression = Parser.instance.buildTree(inputString)
         Number result = expression.evaluate(context)
 
         then:
@@ -22,7 +22,7 @@ class InterpreterTest extends Specification {
         Context context = new Context()
 
         when:
-        Expression expression = Parser.buildTree(inputString)
+        Expression expression = Parser.instance.buildTree(inputString)
         Number result = expression.evaluate(context)
 
         then:
@@ -32,7 +32,7 @@ class InterpreterTest extends Specification {
     def "Interpret well formed expression using variables"() {
         given:
         String inputString = "var2 var1 2 1 - + *"
-        Expression expression = Parser.buildTree(inputString)
+        Expression expression = Parser.instance.buildTree(inputString)
 
         expect:
         result == expression.evaluate(context)
@@ -51,7 +51,7 @@ class InterpreterTest extends Specification {
         Context context = new Context()
 
         when:
-        Expression expression = Parser.buildTree(inputString)
+        Expression expression = Parser.instance.buildTree(inputString)
         expression.evaluate(context)
 
         then:
@@ -65,7 +65,7 @@ class InterpreterTest extends Specification {
         Context context = new Context()
 
         when:
-        Expression expression = Parser.buildTree(inputString)
+        Expression expression = Parser.instance.buildTree(inputString)
         expression.evaluate(context)
 
         then:
