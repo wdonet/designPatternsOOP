@@ -6,3 +6,7 @@ include 'Mediator', 'Iterator', 'Observer', 'TemplateMethod', 'Strategy', 'State
 
 //Structural
 include 'Adapter', 'Proxy', 'Facade', 'Composite', 'Decorator', 'Flyweight'
+
+//Other
+include 'ObjectPool'
+
