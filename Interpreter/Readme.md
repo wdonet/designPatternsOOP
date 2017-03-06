@@ -40,6 +40,9 @@ to the problem solving process.
 
 ##Example
 
+![diagram](example.svg)
+... or generate it with [plantext](https://www.planttext.com/) :
+
 @startuml
 
 title "Interpreter Pattern"
