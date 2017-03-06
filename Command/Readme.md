@@ -30,4 +30,6 @@ Sequence Diagram for a re Remote control that needs to switch lights on :
 
 ![diagram](http://i.imgur.com/0xhD3fG.png)
 
-[![Video Description](http://img.youtube.com/vi/wbYjeMctOdE/0.jpg)](http://www.youtube.com/watch?v=wbYjeMctOdE)
+## Tutorial
+
+[![Video Description](http://img.youtube.com/vi/Sdj4S-OTCTU/0.jpg)](http://www.youtube.com/watch?v=Sdj4S-OTCTU)
