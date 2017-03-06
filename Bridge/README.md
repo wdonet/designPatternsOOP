@@ -6,7 +6,14 @@
 ## Problem
 
 When an abstraction can have one of several possible implementations, the usual way to accommodate 
-them is to use inheritance, but this approach isn't always flexible enough.
+them is to use inheritance, but this approach isn't always flexible enough
+
+---
+## Solution
+
+![InitialImpl.png](InitialImpl.png)
+
+![FinalImpl.png](FinalImpl.png)
 
 ---
 ## Actors
