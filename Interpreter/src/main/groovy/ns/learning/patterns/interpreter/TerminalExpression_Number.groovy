@@ -9,7 +9,7 @@ class TerminalExpression_Number implements Expression {
     }
 
     @Override
-    void interpret(Stack<Number> expression) {
-        expression.push(number)
+    Number evaluate(Context context) {
+        return number
     }
 }

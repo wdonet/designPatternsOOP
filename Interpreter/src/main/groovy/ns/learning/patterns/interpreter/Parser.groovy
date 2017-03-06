@@ -4,34 +4,47 @@ class Parser {
     public static final String PLUS_SYMBOL = "+"
     public static final String MINUS_SYMBOL = "-"
     public static final String MULTIPLY_SYMBOL = "*"
-    private ArrayList<Expression> parseTree = new ArrayList<Expression>()
 
-    Parser(String s) {
+    static Expression buildTree(String s) {
+        Stack<Expression> parseTree = new LinkedList<>()
         String[] tokens = s.split(" ", -1)
+        Expression expression
 
-        for (String token : tokens) {
-            if (token == PLUS_SYMBOL) {
-                parseTree.add(TerminalExpression_Plus.instance)
-            } else if (token == MINUS_SYMBOL) {
-                parseTree.add(TerminalExpression_Minus.instance)
-            } else if (token == MULTIPLY_SYMBOL) {
-                parseTree.add(TerminalExpression_Multiply.instance)
-            } else if (token.matches("\\d*\\.\\d+")) {
-                parseTree.add(new TerminalExpression_Number(Double.valueOf(token)))
-            } else if (token.matches("\\d+")) {
-                parseTree.add(new TerminalExpression_Number(Integer.valueOf(token)))
-            } else {
-                throw new UnexpectedStringException(token)
+        try {
+            for (String token : tokens) {
+                if (token == PLUS_SYMBOL) {
+                    expression = new NonTerminalExpression_Plus()
+                    expression.right = parseTree.pop()
+                    expression.left = parseTree.pop()
+                    parseTree.push(expression)
+                } else if (token == MINUS_SYMBOL) {
+                    expression = new NonTerminalExpression_Minus()
+                    expression.right = parseTree.pop()
+                    expression.left = parseTree.pop()
+                    parseTree.push(expression)
+                } else if (token == MULTIPLY_SYMBOL) {
+                    expression = new NonTerminalExpression_Multiply()
+                    expression.right = parseTree.pop()
+                    expression.left = parseTree.pop()
+                    parseTree.push(expression)
+                } else if (token.matches("\\d*\\.\\d+")) {
+                    parseTree.push(new TerminalExpression_Number(Double.valueOf(token)))
+                } else if (token.matches("\\d+")) {
+                    parseTree.push(new TerminalExpression_Number(Integer.valueOf(token)))
+                } else if (token.matches("[a-zA-Z\\d_]+")) {
+                    parseTree.push(new TerminalExpression_Variable(token))
+                } else {
+                    throw new UnexpectedStringException(token)
+                }
             }
+        } catch (EmptyStackException ex) {
+            throw new MalFormedInputExpression(ex)
         }
-    }
 
-    Number evaluate() {
-        Stack<Number> context = new Stack<Integer>()
+        if (parseTree.size() != 1) {
+            throw new MalFormedInputExpression()
+        }
 
-        for (Expression e : parseTree)
-            e.interpret(context)
-
-        return context.pop()
+        return parseTree.pop()
     }
 }
